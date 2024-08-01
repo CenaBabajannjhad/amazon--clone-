@@ -3,29 +3,32 @@
 .container {
   width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
-.slider {
+.slider-box {
   display: flex;
-  justify-content: space-between;
-  height: 100vh;
-  background: linear-gradient(#ffffff00, #fff 60%),
-    url("../../assets/image/slider-img/slid-1.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.slider-btn {
-  width: 100px;
-  height: 200px;
-  background-color: inherit;
-  font-size: 50px;
-  font-weight: 500;
-  color: #141414;
-  border: none;
-  cursor: pointer;
-  margin-top: 0.5%;
+  transition: transform 0.8s ease;
+  background-image: linear-gradient(#ffebeb00, #fff) !important;
 }
 
-.slider-btn:hover {
-  border: 1px solid black;
-  outline: 2px solid #fff;
+.slider-box img {
+  max-width: 100%;
+  margin-right: 10px;
+  z-index: -1;
+}
+
+#slider-pre,
+#slider-nex {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20%;
+  transform: translate(-15%, -20%);
+  cursor: pointer;
+}
+#slider-pre {
+  left: 15%;
+}
+#slider-nex {
+  right: 15%;
 }
