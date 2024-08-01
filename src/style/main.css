@@ -21,6 +21,7 @@
   font-size: 50px;
   color: #141414;
   border: none;
+  cursor: pointer;
 }
 
 .slider-btn:hover {
