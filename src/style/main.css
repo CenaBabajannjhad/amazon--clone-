@@ -22,8 +22,9 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 20%;
+  top: 10%;
   transform: translate(-15%, -20%);
+  padding: 5% 1%;
   cursor: pointer;
 }
 #slider-pre {
@@ -31,4 +32,9 @@
 }
 #slider-nex {
   right: 15%;
+}
+
+.slider-btn:hover {
+  border: 1px solid black;
+  outline: 2px solid #fff;
 }
