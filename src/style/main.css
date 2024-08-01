@@ -39,3 +39,17 @@
   border: 1px solid black;
   outline: 2px solid #fff;
 }
+/* start header style by shayan */
+.top-header {
+  display: flex;
+}
+.top-header-item {
+  width: 113px;
+  height: 60px;
+  padding: 4px 0px 0px;
+}
+.top-header-item a img {
+  height: 52px;
+  width: 113px;
+  object-fit: cover;
+}
