@@ -15,10 +15,15 @@
   background-repeat: no-repeat;
 }
 .slider-btn {
-  width: 150px;
-  height: 300px;
+  width: 100px;
+  height: 200px;
   background-color: inherit;
   font-size: 50px;
-  color: #afadad;
+  color: #141414;
   border: none;
+}
+
+.slider-btn:hover {
+  border: 1px solid black;
+  outline: 2px solid #fff;
 }
