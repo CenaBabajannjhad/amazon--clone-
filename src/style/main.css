@@ -7,7 +7,6 @@
 .slider {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 50vh;
   background: linear-gradient(#ffffff00, #fff),
     url("../../assets/image/slider-img/slid-1.jpg");
@@ -19,9 +18,11 @@
   height: 200px;
   background-color: inherit;
   font-size: 50px;
+  font-weight: 500;
   color: #141414;
   border: none;
   cursor: pointer;
+  margin-top: 2%;
 }
 
 .slider-btn:hover {
