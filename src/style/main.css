@@ -7,10 +7,10 @@
 .slider {
   display: flex;
   justify-content: space-between;
-  height: 50vh;
-  background: linear-gradient(#ffffff00, #fff),
+  height: 100vh;
+  background: linear-gradient(#ffffff00, #fff 60%),
     url("../../assets/image/slider-img/slid-1.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .slider-btn {
