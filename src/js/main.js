@@ -1,5 +1,6 @@
 "use strict";
 
+
 document.addEventListener("DOMContentLoaded", () => {
   // carousel area
   const prevBtn = document.getElementById("prev");
@@ -41,4 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
       slider.style.transform = `translate(${-index * imagesWidth}px)`;
     }
   });
+
 });

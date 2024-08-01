@@ -1,7 +1,7 @@
 let boxesData = [
   {
     id: 1,
-    image: "url",
+    image: "./assets/images/boxes-img/beauty-img.jpg",
     name: "Deals in PCs",
   },
   {
@@ -60,3 +60,6 @@ let boxesData = [
     name: "Level up your gaming",
   },
 ];
+
+
+export default boxesData
