@@ -348,6 +348,21 @@ body {
   display: block;
 }
 
+/*----------------------*/
+.buttom-header {
+  max-height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #0f110f;
+}
+.buttom-header div:first-child {
+  margin-left: 25px;
+}
+.buttom-item {
+  margin: 5px 0px 6px;
+  padding: 8px 9px;
+  color: white;
+}
 /* End header style by shayan */
 
 /* burger menu */
