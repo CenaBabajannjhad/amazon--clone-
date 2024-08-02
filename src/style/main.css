@@ -120,7 +120,7 @@ input {
   overflow-y: scroll;
   z-index: 10000;
   background-color: #fff;
-  display: none;
+  /* display: none; */
 }
 .burger-user-info {
   background-color: #2a3a52;
@@ -146,6 +146,10 @@ input {
 }
 .menu-section-item {
   padding: 3% 0;
+  transition: all 0.5s ease;
+}
+.menu-section-item:hover {
+  background-color: #d8d7d7;
 }
 .menu-section-item-links {
   display: flex;
@@ -162,5 +166,12 @@ input {
   align-items: center;
 }
 .see-more-txt {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.menu-section-help-links {
+  display: flex;
+  align-items: center;
+}
+.help-btn {
+  margin-right: 10px;
 }
