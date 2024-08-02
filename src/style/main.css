@@ -140,8 +140,8 @@
   margin: 0px 2px 1px 0px;
   margin: 2px 0px 0px 2px;
 }
-/* language-dropbox */
-.language-dropbox {
+/* language-dropbox => cena */
+.language-dropbox{
   top: 60px;
   position: absolute;
   padding: 10px;
@@ -150,10 +150,11 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  transition: all .3s ease-in-out;
 
   display: none;
+
 }
+
 .language-title {
   display: flex;
   align-items: center;
@@ -271,6 +272,89 @@
   color: white;
   margin-left: 5px;
 }
+/* account dropbox => cena */
+.account-signin-dropbox{
+  top: 60px;
+  right: 20px;
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  display: none;
+}
+.signin-area{
+  text-align: center;
+  padding: 5px 0px;
+}
+.signin-area > button{
+  text-align: center;
+  padding: 7px 25px;
+  width: 140px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(247, 247, 0);
+}
+.signin-area > p{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-size: .8rem;
+  border-bottom: 1px solid rgb(203, 203, 203);
+
+}
+.signin-area > p > a{
+  text-align: center;
+  font-size: .8rem;
+  color: rgb(160, 182, 255);
+  text-decoration: underline;
+}
+.sign-in-configs{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+}
+.account-section-1{
+  padding: 10px;
+}
+.account-section-1 p:nth-child(1){
+  font-size: 1.2rem !important;
+}
+.account-section-1 > p{
+  padding-bottom: 5px;
+}
+.account-section-2{
+  padding: 10px;
+  border-left: 1px solid rgb(203, 203, 203);
+}
+.account-section-2 p:nth-child(1){
+  font-size: 1.2rem !important;
+}
+.account-section-2 > p{
+  padding-bottom: 5px;
+}
+.sign-in:hover .account-signin-dropbox{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* End header style by shayan */
 
