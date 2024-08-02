@@ -5,6 +5,14 @@
   color: black;
   font-family: Arial, Helvetica, sans-serif !important;
 }
+.overlayer {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #0000009f;
+}
 body {
   background-color: #e2e2e2;
 }

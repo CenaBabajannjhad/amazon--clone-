@@ -1,131 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style/main.css" />
-    <title>Amazon</title>
-  </head>
 
-  <body>
-    <!-- start header by shayan -->
-    <header class="header">
-      <section class="top-header">
-        <div class="header-logo br-box">
-          <a href="#"><img id="brand" src="assets/image/logo.png" alt="" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style/main.css" />
+  <title>Amazon</title>
+</head>
+
+<body>
+  <!-- start header by shayan -->
+  <header class="header">
+    <section class="top-header">
+      <div class="header-logo br-box">
+        <a href="#"><img id="brand" src="assets/image/logo.png" alt="" /></a>
+      </div>
+      <div class="header-location br-box">
+        <div class="location-cont">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="location-box">
+            <span>
+              <p style="font-size: 12px; color: #ccc">Deliver to</p>
+            </span>
+            <span>
+              <p style="font-size: 18px; color: white">
+                Iran, Islamic Rep...
+              </p>
+            </span>
+          </div>
         </div>
-        <div class="header-location br-box">
-          <div class="location-cont">
-            <i class="fa-solid fa-location-dot"></i>
-            <div class="location-box">
-              <span>
-                <p style="font-size: 12px; color: #ccc">Deliver to</p>
-              </span>
-              <span>
-                <p style="font-size: 18px; color: white">
-                  Iran, Islamic Rep...
-                </p>
-              </span>
+      </div>
+      <div class="search">
+        <select class="header-selector" name="" id="">
+          <option value="">All</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4</option>
+          <option value="">5</option>
+          <option value="">6</option>
+          <option value="">7</option>
+          <option value="">8</option>
+          <option value="">9</option>
+          <option value="">10</option>
+        </select>
+        <input class="header-search-input" type="text" placeholder="Search Amazon" />
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <!-- language -->
+      <div id="language" class="language br-box">
+        <span><img src="assets/image/icons/usa-flag.svg" alt="" /></span>
+        <div>EN</div>
+        <span><i class="fa-solid fa-arrow-down"></i></span>
+        <!-- language-dropbox -->
+        <div class="language-dropbox">
+          <div class="language-box-header">
+            <div class="language-title">
+              <p>change language</p>
+              <a href="#">learn more</a>
+            </div>
+
+            <div class="current-language">
+              <input type="radio" checked />
+              <p class="lang-name">English - en</p>
             </div>
           </div>
-        </div>
-        <div class="search">
-          <select class="header-selector" name="" id="">
-            <option value="">All</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-            <option value="">6</option>
-            <option value="">7</option>
-            <option value="">8</option>
-            <option value="">9</option>
-            <option value="">10</option>
-          </select>
-          <input
-            class="header-search-input"
-            type="text"
-            placeholder="Search Amazon"
-          />
-          <div class="search-icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-        </div>
-        <!-- language -->
-        <div class="language br-box">
-          <span><img src="assets/image/icons/usa-flag.svg" alt="" /></span>
-          <div>EN</div>
-          <span><i class="fa-solid fa-arrow-down"></i></span>
-          <!-- language-dropbox -->
-          <div class="language-dropbox">
-            <div class="language-box-header">
-              <div class="language-title">
-                <p>change language</p>
-                <a href="#">learn more</a>
+
+          <div class="language-box-body">
+            <div class="another-languages">
+              <!-- langs -->
+              <div class="drop-languages">
+                <input type="radio" checked />
+                <p class="lang-name">English - en</p>
               </div>
 
-              <div class="current-language">
+              <div class="drop-languages">
+                <input type="radio" checked />
+                <p class="lang-name">English - en</p>
+              </div>
+
+              <div class="drop-languages">
+                <input type="radio" checked />
+                <p class="lang-name">English - en</p>
+              </div>
+
+              <div class="drop-languages">
+                <input type="radio" checked />
+                <p class="lang-name">English - en</p>
+              </div>
+
+              <div class="drop-languages">
                 <input type="radio" checked />
                 <p class="lang-name">English - en</p>
               </div>
             </div>
+          </div>
 
-            <div class="language-box-body">
-              <div class="another-languages">
-                <!-- langs -->
-                <div class="drop-languages">
-                  <input type="radio" checked />
-                  <p class="lang-name">English - en</p>
-                </div>
-
-                <div class="drop-languages">
-                  <input type="radio" checked />
-                  <p class="lang-name">English - en</p>
-                </div>
-
-                <div class="drop-languages">
-                  <input type="radio" checked />
-                  <p class="lang-name">English - en</p>
-                </div>
-
-                <div class="drop-languages">
-                  <input type="radio" checked />
-                  <p class="lang-name">English - en</p>
-                </div>
-
-                <div class="drop-languages">
-                  <input type="radio" checked />
-                  <p class="lang-name">English - en</p>
-                </div>
-              </div>
+          <div class="language-box-footer">
+            <div class="language-footer-title">
+              <p>Cambiar moneda</p>
+              <a href="#">Más información</a>
             </div>
 
-            <div class="language-box-footer">
-              <div class="language-footer-title">
-                <p>Cambiar moneda</p>
-                <a href="#">Más información</a>
-              </div>
+            <div class="language-footer-info">
+              <p>$ - USD - dólar estadounidenseCam</p>
+              <a href="#">Cambiar</a>
+            </div>
 
-              <div class="language-footer-info">
-                <p>$ - USD - dólar estadounidenseCam</p>
-                <a href="#">Cambiar</a>
-              </div>
+            <div class="language-comprando-footer">
+              <img width="15px" src="./assets/image/icons/usa-flag.svg" alt="" />
+              <p>Estás comprando en Amazon.com</p>
+            </div>
 
-              <div class="language-comprando-footer">
-                <img
-                  width="15px"
-                  src="./assets/image/icons/usa-flag.svg"
-                  alt=""
-                />
-                <p>Estás comprando en Amazon.com</p>
-              </div>
+            <div class="language-Cambiar">
+              <a href="#">Cambiar página</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="language-Cambiar">
-                <a href="#">Cambiar página</a>
+
+
+
+
+
+
+
+
+
+
+
+      <div id="sign-in" class="sign-in br-box">
+        <div class="sign">
+          <div>Hello, sign in</div>
+          <span>Account & Lists<i class="fa-solid fa-arrow-down"></i></span>
+        </div>
+        <!-- sign-in dropdown -->
+        <div class="account-signin-dropbox">
+          <div class="account-container">
+            <div class="signin-area">
+              <button>sign in</button>
+              <p>New customer? <a href="">Start here.</a></p>
+            </div>
+
+            <div class="sign-in-configs">
+              <div class="account-section-1">
+                <p>your listes</p>
+                <p>create a list</p>
+                <p>find a list or a registry</p>
+              </div>
+              <div class="account-section-2">
+                <p>your account</p>
+                <p>accounts</p>
+                <p>orders</p>
+                <p>Recommendations</p>
+                <p>Browsing History</p>
+                <p>Watchlist</p>
+                <p>Video Purchases & Rentals</p>
+                <p>Kindle Unlimited</p>
+                <p>Content & Devices</p>
+                <p>Subscribe & Save Items</p>
+                <p>Memberships & Subscriptions</p>
+                <p>Music Library</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
         <div class="sign-in br-box">
           <div class="sign">
@@ -539,4 +581,195 @@
     </main>
     <script src="./src/js/main.js"></script>
   </body>
+</html>
+
+
+      <div class="sign-in br-box">
+        <div class="sign">
+          <div>Returns</div>
+          <span>& Orders</span>
+        </div>
+      </div>
+      <div class="cart br-box">
+        <i class="fa-solid fa-cart-shopping"></i>cart
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--buttom-header-->
+    <section class="buttom-header"></section>
+  </header>
+  <!-- end header by shayan -->
+  <main id="main">
+    <img src="./assets/image/icons/close.svg" alt="close icon" class="close-menu-btn" />
+    <!-- burger menu  => hossein -->
+    <section class="burger">
+      <div class="burger-user-info">
+        <a href="#" class="user-info-link">
+          <img src="./assets/image/icons/user.svg" alt="user profile" class="user-profile" />
+          Hello, sign in
+        </a>
+      </div>
+      <div class="menu-section">
+        <h2 class="menu-section-title">Digital Content & Devices</h2>
+        <ul class="menu-section-items">
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Amazon Music</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Kindle E-reads & books</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Amazon Appstore</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="menu-section">
+        <h2 class="menu-section-title">Shop by Department</h2>
+        <ul class="menu-section-items">
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Electronics</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Computers</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Smart Home</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Arts & Crafts</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="see-more">
+              <p class="see-more-txt">See more</p>
+              <img src="./assets/image/icons/bootom.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="menu-section">
+        <h2 class="menu-section-title">Programs & Features</h2>
+        <ul class="menu-section-items">
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Gift Cards</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Shop By Intrest</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Amazon Live</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>International Shopping</p>
+              <img src="./assets/image/slider-img/next.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="see-more">
+              <p class="see-more-txt">See more</p>
+              <img src="./assets/image/icons/bootom.svg" alt="next btn" class="menu-btn" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="menu-section">
+        <h2 class="menu-section-title">Help & Settings</h2>
+        <ul class="menu-section-items">
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Your Accounts</p>
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-help-links">
+              <img src="./assets/image/icons/internet-logo.svg" alt="net logo" class="menu-btn help-btn" />
+              <p>English</p>
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-help-links">
+              <img src="./assets/image/icons/usa-flag.svg" alt="next btn" class="menu-btn help-btn" />
+              <p>United States</p>
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="menu-section-item-links">
+              <p>Coustomer Services</p>
+            </a>
+          </li>
+          <li class="menu-section-item">
+            <a href="#" class="see-more">
+              <p class="see-more-txt">sign in</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- carusel -->
+    <section class="carousel">
+      <figure class="slider">
+        <img class="slid-images" src="./assets/image/slider-img/slid-1.jpg" alt="slider img" />
+        <img class="slid-images" src="./assets/image/slider-img/slide-2.jpg" alt="slider img" />
+        <img class="slid-images" src="./assets/image/slider-img/slide-3.jpg" alt="slider img" />
+        <img class="slid-images" src="./assets/image/slider-img/slide-4.jpg" alt="slider img" />
+        <img class="slid-images" src="./assets/image/slider-img/slide-5.jpg" alt="slider img" />
+      </figure>
+
+      <button id="next">
+        <img src="./assets/image/slider-img/next.svg" alt="next buttom" />
+      </button>
+      <button id="prev">
+        <img src="./assets/image/slider-img/prev.svg" alt="prev buttom" />
+      </button>
+    </section>
+  </main>
+  <script src="./src/js/main.js"></script>
+</body>
+
 </html>

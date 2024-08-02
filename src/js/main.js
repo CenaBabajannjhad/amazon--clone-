@@ -9,7 +9,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const imagesWidth = images[0].clientWidth;
   const lastImageLength = images.length - 1;
   let index = 0;
-  //set interval for every 5 secount change slider images
+  // **side-navbar area**
+  let target = document.querySelector("#brand");
+  let sideNavbar = document.querySelector(".burger");
+  // **drop-down area**
+  const overLayerPlace = document.querySelector('.carousel');
+  const overLayerElement = document.createElement('div');
+  const languageDrop = document.getElementById("language");
+  const signInDrop = document.getElementById("sign-in");
+  const dropElements = [languageDrop , signInDrop];
+
+  // **carousel area**
   setInterval(() => {
     index++;
     slider.style.transform = `translate(${-index * imagesWidth}px)`;
@@ -18,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
       index = 0;
     }
   }, 4000);
-  // nex btn event
   nextBtn.addEventListener("click", () => {
     index++;
     slider.style.transform = `translate(${-index * imagesWidth}px)`;
@@ -28,7 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
       index = 0;
     }
   });
-  // prev btn event
   prevBtn.addEventListener("click", () => {
     if (index !== 0) {
       index--;
@@ -40,12 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
       slider.style.transform = `translate(${-index * imagesWidth}px)`;
     }
   });
-
   // **side-navbar area**
-  let target = document.querySelector('#brand');
-  let sideNavbar = document.querySelector('.burger');
-  // side-navbar event
-  target.addEventListener('click' , () => {
-    sideNavbar.classList.toggle('show-burger')
-  })
+  target.addEventListener("click", () => {
+    sideNavbar.classList.toggle("show-burger");
+  });
+  // **drop-down area**
+  dropElements.forEach((element => {
+    element.addEventListener('mouseover' , () => {
+      overLayerElement.classList.add('overlayer')
+      overLayerPlace.appendChild(overLayerElement);
+    })
+    element.addEventListener('mouseleave' , () => {
+      document.querySelector('.overlayer').remove()
+    })
+  }))
 });
