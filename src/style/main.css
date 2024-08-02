@@ -1,5 +1,9 @@
 @import url("reset.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+* {
+  text-decoration: none;
+  color: black;
+}
 .container {
   width: 1400px;
   margin: 0 auto;
@@ -84,4 +88,58 @@
 }
 .location-cont i {
   margin: 0px 10px 2px 0px;
+}
+
+/* burger menu */
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: 10000;
+  background-color: #fff;
+}
+.burger-user-info {
+  background-color: #2a3a52;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5% 0;
+  text-align: center;
+}
+.user-info-link {
+  color: #fff;
+}
+.user-profile {
+  width: 25px;
+  height: 25px;
+}
+.menu-section {
+  padding: 5% 10%;
+}
+.menu-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+.menu-section-item {
+  padding: 3% 0;
+}
+.menu-section-item-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.menu-btn {
+  width: 20px;
+  height: 20px;
+}
+.see-more {
+  display: flex;
+  align-items: center;
+}
+.see-more-txt {
+  margin-right: 20px;
 }
