@@ -126,7 +126,12 @@
 /* End header style by shayan */
 
 /* burger menu */
+.show-burger{
+  transform: translate(0) !important;
+}
 .burger {
+  transform: translateX(-100%);
+  transition: all .4s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;

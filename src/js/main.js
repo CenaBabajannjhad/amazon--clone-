@@ -1,24 +1,22 @@
 "use strict";
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  // carousel area
+  // **carousel area**
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
   const slider = document.querySelector(".slider");
   const images = document.querySelectorAll(".slid-images");
   const imagesWidth = images[0].clientWidth;
-  const imagesLength = images.length - 1;
+  const lastImageLength = images.length - 1;
   let index = 0;
   //set interval for every 5 secount change slider images
   setInterval(() => {
     index++;
     slider.style.transform = `translate(${-index * imagesWidth}px)`;
 
-    if(index === imagesLength || index > imagesLength){
-        index = 0;
+    if (index === lastImageLength || index > lastImageLength) {
+      index = 0;
     }
-    console.log(`nexBtn : ${index}`);
   }, 4000);
   // nex btn event
   nextBtn.addEventListener("click", () => {
@@ -43,4 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // **side-navbar area**
+  let target = document.querySelector('#brand');
+  let sideNavbar = document.querySelector('.burger');
+  // side-navbar event
+  target.addEventListener('click' , () => {
+    sideNavbar.classList.toggle('show-burger')
+  })
 });
