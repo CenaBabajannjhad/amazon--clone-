@@ -118,14 +118,26 @@
   padding: 0px 6px 0px 6px;
   border-radius: 0px 4px 4px 0px;
 }
-
-.country {
+.language {
   display: flex;
   align-items: center;
+  padding: 0px 9px 5px;
 }
-.country select {
-  border: none;
-  background-color: white;
+.language span img {
+  width: 21px;
+  height: 16px;
+  margin: 0px 2px 1px 0px;
+}
+.language div {
+  font-size: 18px;
+  color: white;
+}
+
+.language span i {
+  font-size: 10px;
+  color: white;
+  margin: 0px 2px 1px 0px;
+  margin: 2px 0px 0px 2px;
 }
 /* End header style by shayan */
 
