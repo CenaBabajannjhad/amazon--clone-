@@ -150,7 +150,7 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   display: none;
 }
@@ -168,7 +168,7 @@
   color: rgb(160, 182, 255);
   text-decoration: underline;
 }
-.current-language{
+.current-language {
   display: flex;
   align-items: center;
 
@@ -176,78 +176,73 @@
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(203, 203, 203);
 }
-.lang-name{
-  font-size: .9rem;
+.lang-name {
+  font-size: 0.9rem;
 }
-.lang-name:hover{
+.lang-name:hover {
   color: orangered;
   text-decoration: underline;
 }
-.drop-languages{
+.drop-languages {
   display: flex;
   align-items: center;
   padding: 7px 0px;
 }
-.drop-languages:last-child{
+.drop-languages:last-child {
   border-bottom: 1px solid rgb(203, 203, 203);
   padding-bottom: 10px;
 }
-.language-footer-title{
+.language-footer-title {
   display: flex;
   align-items: center;
-  font-size: .7rem !important;
+  font-size: 0.7rem !important;
 }
-.language-footer-title > p{
+.language-footer-title > p {
   margin-top: 5px;
-  font-size: .8rem !important;
+  font-size: 0.8rem !important;
   margin-right: 10px;
 }
-.language-footer-title > a{
-  font-size: .6rem !important;
+.language-footer-title > a {
+  font-size: 0.6rem !important;
   text-decoration: underline;
   color: rgb(160, 182, 255);
 }
-.language-footer-title > a:hover{
+.language-footer-title > a:hover {
   color: orangered !important;
 }
-.language-footer-info{
+.language-footer-info {
   margin-top: 10px;
-  font-size: .8rem !important;
+  font-size: 0.8rem !important;
 }
-.language-footer-info > a{
+.language-footer-info > a {
   display: block;
   text-align: right;
   padding-top: 5px;
   color: rgb(160, 182, 255);
   border-bottom: 1px solid rgb(203, 203, 203);
 }
-.language-comprando-footer{
+.language-comprando-footer {
   display: flex;
   align-items: center;
   padding: 10px 0px;
 }
-.language-comprando-footer > img{
+.language-comprando-footer > img {
   margin-right: 5px;
 }
-.language-comprando-footer > p{
-  font-size: .8rem;
+.language-comprando-footer > p {
+  font-size: 0.8rem;
 }
-.language-Cambiar{
+.language-Cambiar {
   padding-top: 15px;
   padding-left: 30px;
 }
-.language-Cambiar > a{
-  font-size: .8rem;
+.language-Cambiar > a {
+  font-size: 0.8rem;
   color: rgb(160, 182, 255);
 }
-.language:hover .language-dropbox{
+.language:hover .language-dropbox {
   display: block;
 }
-
-
-
-
-
 
 .sign-in {
   display: flex;
@@ -271,7 +266,16 @@
   color: white;
   margin-left: 5px;
 }
-
+.cart {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 5px 0px;
+  color: white;
+}
+.cart i {
+  font-size: 28px;
+}
 /* End header style by shayan */
 
 /* burger menu */
