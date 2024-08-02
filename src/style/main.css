@@ -85,3 +85,14 @@
 .location-cont i {
   margin: 0px 10px 2px 0px;
 }
+.search {
+  display: flex;
+}
+input,
+select {
+  border: none;
+}
+.search-icon {
+  background-color: #febd69;
+  padding: 7px;
+}
