@@ -60,11 +60,12 @@
 .top-header {
   display: flex;
   justify-content: space-evenly;
+  max-width: 98%;
 }
 .header-logo {
   width: 113px;
   height: 60px;
-  margin: 5px 0px;
+  margin: 5px 8px;
 }
 .br-box {
   border: 2px solid transparent;
@@ -85,7 +86,7 @@
   color: #fff;
   display: flex;
   align-items: center;
-  margin: 5px 0px;
+  margin: 5px 8px;
 }
 .location-cont {
   display: flex;
@@ -101,6 +102,7 @@
   width: 400px;
   height: 60px;
   padding: 10px 4px 10px 3px;
+  flex-grow: 1;
 }
 .header-selector {
   border-radius: 4px 0px 0px 4px;
@@ -110,6 +112,9 @@
 }
 .search input {
   border: none;
+  flex-grow: 1;
+  flex-shrink: 2;
+  max-width: 720px;
 }
 .search-icon {
   background-color: #febd69;
@@ -123,7 +128,7 @@
   display: flex;
   align-items: center;
   padding: 0px 9px 5px;
-  margin: 5px 0px;
+  margin: 5px 8px;
 }
 .language span img {
   width: 21px;
@@ -248,7 +253,7 @@
   display: flex;
   align-items: center;
   align-content: center;
-  margin: 5px 0px;
+  margin: 5px 8px;
 }
 .sign {
   display: inline;
@@ -270,7 +275,7 @@
   display: flex;
   align-items: center;
   align-content: center;
-  margin: 5px 0px;
+  margin: 5px 8px;
   color: white;
 }
 .cart i {
