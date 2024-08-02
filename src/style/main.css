@@ -53,13 +53,6 @@
   justify-content: space-evenly;
   width: 100%;
 }
-.nav-left,
-.nav-fill,
-.nav-right {
-  display: flex;
-  align-items: center;
-  align-content: space-between;
-}
 .header-logo {
   width: 113px;
   height: 60px;
