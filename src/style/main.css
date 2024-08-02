@@ -17,6 +17,7 @@
   display: flex;
   /* justify-content: flex-start; */
   transition: all 0.4s ease-in-out;
+
   /* background-image: linear-gradient(#ffebeb00, #fff) !important; */
 }
 .slid-images {
@@ -49,12 +50,15 @@
 /* Start header style by shayan */
 .header {
   background-color: #131921;
-  width: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 .top-header {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
 }
 .header-logo {
   width: 113px;
@@ -113,6 +117,15 @@
   padding: 0px 6px 0px 6px;
   border-radius: 0px 4px 4px 0px;
 }
+
+.country {
+  display: flex;
+  align-items: center;
+}
+.country select {
+  border: none;
+  background-color: white;
+}
 /* End header style by shayan */
 
 /* burger menu */
@@ -130,7 +143,7 @@
   overflow-y: scroll;
   z-index: 10000;
   background-color: #fff;
-  /* display: none; */
+  display: none;
 }
 .burger-user-info {
   background-color: #2a3a52;
