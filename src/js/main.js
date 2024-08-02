@@ -46,6 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let sideNavbar = document.querySelector('.burger');
   // side-navbar event
   target.addEventListener('click' , () => {
-    sideNavbar.classList.toggle('show-sideNavabr')
+    sideNavbar.classList.toggle('show-burger')
   })
 });
