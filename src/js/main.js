@@ -9,7 +9,7 @@ const imagesWidth = images[0].clientWidth;
 const lastImageLength = images.length - 1;
 let index = 0;
 // **side-navbar area**
-let target = document.querySelector("#brand");
+let target = document.querySelector("#menu");
 let sideNavbar = document.querySelector(".burger");
 // **drop-down area**
 const overLayerPlace = document.querySelector(".carousel");
@@ -49,7 +49,16 @@ prevBtn.addEventListener("click", () => {
 });
 // **side-navbar area**
 target.addEventListener("click", () => {
-  sideNavbar.classList.toggle("show-burger");
+  sideNavbar.classList.add("show-burger");
+  overLayerElement.classList.add("overlayer");
+  document.querySelector(".header").appendChild(overLayerElement);
+  document.querySelector("body").classList.add("overflow-hidden");
+
+  overLayerElement.addEventListener("click", () => {
+    document.querySelector("body").classList.remove("overflow-hidden");
+    sideNavbar.classList.remove("show-burger");
+    overLayerElement.remove()
+  });
 });
 // **drop-down area**
 dropElements.forEach((element) => {
