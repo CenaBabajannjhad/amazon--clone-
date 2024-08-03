@@ -5,27 +5,27 @@ let userLocation = [];
 // **boxes data**
 const Data = [
   {
-    title: "product-1",
+    title: "health and beauty",
     imageSrc: "./assets/image/boxes-img/1.jpg",
   },
   {
-    title: "product-2",
+    title: "Home décor under $50",
     imageSrc: "./assets/image/boxes-img/2.jpg",
   },
   {
-    title: "product-3",
+    title: "jeans under $50",
     imageSrc: "./assets/image/boxes-img/3.jpg",
   },
   {
-    title: "product-4",
+    title: "tops under $25",
     imageSrc: "./assets/image/boxes-img/4.jpg",
   },
   {
-    title: "product-5",
+    title: "Dresses under $30",
     imageSrc: "./assets/image/boxes-img/5.jpg",
   },
   {
-    title: "product-6",
+    title: "Shoes under $50",
     imageSrc: "./assets/image/boxes-img/6.jpg",
   },
   {
@@ -278,7 +278,7 @@ let index = 0;
 let menuBtn = document.querySelector("#menu");
 let sideNavbar = document.querySelector(".burger");
 // **drop-down area**
-const overLayerPlace = document.querySelector(".carousel");
+const overLayerPlace = document.querySelector("#main");
 const overLayerElement = document.createElement("div");
 const languageDrop = document.getElementById("language");
 const signInDrop = document.getElementById("sign-in");
@@ -342,6 +342,8 @@ dropElements.forEach((element) => {
     document.querySelector(".overlayer").remove();
   });
 });
+
+
 
 // **boxes area**
 // box generator , this func get two param , one => until where in data array make box , two => as where startin generate box 
@@ -430,6 +432,8 @@ let scrollBoxesCountUpdate = () => {
   console.log(scrollBoxesCount)
 };
 
+
+
 // **user location area**
 // show in location-box country and city name
 let showInDomCityAndCountryName = () => {
@@ -459,8 +463,9 @@ let success = async (pos) => {
   }
 }
 // if geolocation return had error , callback func
-let error = () => {
-  alert('pls allow to browser your location')
+let error = (error) => {
+  console.log(error)
+  // alert('pls allow to browser your location')
 }
 // get geolocation
 navigator.geolocation.getCurrentPosition(success , error)
