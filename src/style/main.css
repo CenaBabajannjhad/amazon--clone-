@@ -118,6 +118,7 @@ body {
   height: 60px;
   padding: 10px 4px 10px 3px;
   flex-grow: 1;
+  flex-shrink: 3;
 }
 .header-selector {
   border-radius: 4px 0px 0px 4px;
