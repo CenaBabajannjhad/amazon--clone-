@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 // **carousel area**
 const prevBtn = document.getElementById("prev");
@@ -9,7 +9,7 @@ const imagesWidth = images[0].clientWidth;
 const lastImageLength = images.length - 1;
 let index = 0;
 // **side-navbar area**
-let target = document.querySelector("#menu");
+let menuBtn = document.querySelector("#menu");
 let sideNavbar = document.querySelector(".burger");
 // **drop-down area**
 const overLayerPlace = document.querySelector(".carousel");
@@ -48,7 +48,7 @@ prevBtn.addEventListener("click", () => {
   }
 });
 // **side-navbar area**
-target.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
   sideNavbar.classList.add("show-burger");
   overLayerElement.classList.add("overlayer");
   document.querySelector(".header").appendChild(overLayerElement);
