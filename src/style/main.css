@@ -1,11 +1,12 @@
 @import url("reset.css");
+@import url("responsive.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
 * {
   text-decoration: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif !important;
 }
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
 .overlayer {
@@ -361,13 +362,12 @@ body {
 .buttom-header div:first-child {
   margin-left: 25px;
 }
-.menu{
+.menu {
   width: 20px;
   height: 20px;
   margin-right: 5px;
-  
 }
-.buttom-header div:nth-child(1){
+.buttom-header div:nth-child(1) {
   display: flex;
   align-items: flex-start;
 }
@@ -375,13 +375,13 @@ body {
   margin: 5px 0px 6px;
   padding: 8px 9px;
 }
-.buttom-item > a{
+.buttom-item > a {
   color: #fff;
 }
 /* End header style by shayan */
 
 /* burger menu */
-.close{
+.close {
   position: fixed;
   left: 20px;
 }
