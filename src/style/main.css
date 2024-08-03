@@ -5,7 +5,7 @@
   color: black;
   font-family: Arial, Helvetica, sans-serif !important;
 }
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
 .overlayer {
@@ -83,10 +83,10 @@ body {
   margin: 5px 8px;
 }
 .br-box {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .br-box:hover {
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .header-logo a img {
@@ -124,6 +124,9 @@ body {
   border: none;
 
   background-color: #e6e6e6;
+}
+select.header-selector {
+  max-width: 50px;
 }
 .search input {
   border: none;
@@ -351,38 +354,46 @@ body {
 .sign-in:hover .account-signin-dropbox {
   display: block;
 }
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
 
 /*----------------------*/
 .buttom-header {
   max-height: 40px;
   display: flex;
   justify-content: flex-start;
+  justify-items: center;
   background-color: #0f110f;
 }
 .buttom-header div:first-child {
   margin-left: 25px;
 }
-.menu{
+.menu {
   width: 20px;
   height: 20px;
   margin-right: 5px;
-  
 }
-.buttom-header div:nth-child(1){
+.buttom-header div:nth-child(1) {
   display: flex;
   align-items: flex-start;
 }
 .buttom-item {
   margin: 5px 0px 6px;
   padding: 8px 9px;
+  align-self: center;
 }
-.buttom-item > a{
+.buttom-item > a {
   color: #fff;
 }
 /* End header style by shayan */
 
 /* burger menu */
-.close{
+.close {
   position: fixed;
   left: 20px;
 }
@@ -485,7 +496,7 @@ body {
   margin-bottom: 20px;
 }
 .box-title {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
 }
