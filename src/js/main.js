@@ -29,67 +29,67 @@ const Data = [
     imageSrc: "./assets/image/boxes-img/6.jpg",
   },
   {
-    title: "product-7",
+    title: "Dresses",
     imageSrc: "./assets/image/boxes-img/7.jpg",
   },
   {
-    title: "product-8",
+    title: "Knits",
     imageSrc: "./assets/image/boxes-img/8.jpg",
   },
   {
-    title: "product-9",
+    title: "jackets",
     imageSrc: "./assets/image/boxes-img/9.jpg",
   },
   {
-    title: "product-10",
+    title: "jewelry",
     imageSrc: "./assets/image/boxes-img/10.jpg",
   },
   {
-    title: "product-11",
+    title: "Deals in PCs",
     imageSrc: "./assets/image/boxes-img/11.jpg",
   },
   {
-    title: "product-12",
+    title: "kitchen",
     imageSrc: "./assets/image/boxes-img/12.jpg",
   },
   {
-    title: "product-13",
+    title: "Home décor under $50",
     imageSrc: "./assets/image/boxes-img/13.jpg",
   },
   {
-    title: "product-14",
+    title: "A whole new way to work",
     imageSrc: "./assets/image/boxes-img/14.jpg",
   },
   {
-    title: "product-15",
+    title: "Personal Care under $25",
     imageSrc: "./assets/image/boxes-img/15.jpg",
   },
   {
-    title: "product-16",
+    title: "Toys under $25",
     imageSrc: "./assets/image/boxes-img/16.jpg",
   },
   {
-    title: "product-17",
+    title: "shoes under $150",
     imageSrc: "./assets/image/boxes-img/17.jpg",
   },
   {
-    title: "product-18",
+    title: "Toys under $75",
     imageSrc: "./assets/image/boxes-img/18.jpg",
   },
   {
-    title: "product-19",
+    title: "Upgrade your office furniture",
     imageSrc: "./assets/image/boxes-img/19.jpg",
   },
   {
-    title: "product-20",
+    title: "watch under 50$",
     imageSrc: "./assets/image/boxes-img/20.jpg",
   },
   {
-    title: "product-21",
+    title: "drining",
     imageSrc: "./assets/image/boxes-img/21.jpg",
   },
   {
-    title: "product-22",
+    title: "Upgrade your office furniture",
     imageSrc: "./assets/image/boxes-img/22.jpg",
   },
   {
