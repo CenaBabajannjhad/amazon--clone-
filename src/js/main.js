@@ -1,5 +1,7 @@
 "use strict";
 
+// **user location**
+let userLocation = [];
 // **boxes data**
 const Data = [
   {
@@ -428,32 +430,38 @@ let scrollBoxesCountUpdate = () => {
   console.log(scrollBoxesCount)
 };
 
+// **user location area**
+// show in location-box country and city name
+let showInDomCityAndCountryName = () => {
+  let locationBox = document.querySelector('#location-box');
+  locationBox.textContent = `${userLocation[0]} , ${userLocation[1]}`
+}
+// use revese geolocation for geting name of country and city name
+let reversGeo = async (lati , long) => {
+  const MY_KEY = 'pk.9f9f0d2eed6f7e79c010b1d91d573bdc';
+  const URL = `https://us1.locationiq.com/v1/reverse?key=${MY_KEY}&lat=${lati}&lon=${long}&format=json&`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  fetch(URL)
+   .then(data => data.json())
+   .then(info => returnCountryAndCityName(info));
+}
+let returnCountryAndCityName = async (data) => {
+  const {city , country} = await data.address;
+  userLocation.push(city , country)
+  showInDomCityAndCountryName()
+}
+// if geolocation return was succes , callback func
+let success = async (pos) => {
+  if(pos && pos.coords){
+      let latitude = pos.coords.latitude;
+      let longitude = pos.coords.longitude;
+      reversGeo(latitude , longitude)
+  }
+}
+// if geolocation return had error , callback func
+let error = () => {
+  alert('pls allow to browser your location')
+}
+// get geolocation
+navigator.geolocation.getCurrentPosition(success , error)
 
