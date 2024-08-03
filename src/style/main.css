@@ -77,12 +77,13 @@ body {
   max-width: 98%;
 }
 .header-logo {
-  width: 113px;
+  width: 125px;
   height: 60px;
   margin: 5px 8px;
 }
 .br-box {
   border: 1px solid transparent;
+  padding: 0px 5px;
 }
 .br-box:hover {
   border: 1px solid white;
@@ -356,7 +357,6 @@ select.header-selector {
 .cart {
   display: flex;
   align-items: center;
-  justify-content: center;
   color: white;
   font-size: 18px;
 }
