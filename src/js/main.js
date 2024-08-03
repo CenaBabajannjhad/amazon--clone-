@@ -276,6 +276,7 @@ const lastImageLength = images.length - 1;
 let index = 0;
 // **side-navbar area**
 let menuBtn = document.querySelector("#menu");
+let menuBtnTwo = document.querySelector('#menu-2');
 let sideNavbar = document.querySelector(".burger");
 // **drop-down area**
 const overLayerPlace = document.querySelector("#main");
@@ -319,6 +320,19 @@ prevBtn.addEventListener("click", () => {
 // **side-navbar area**
 // when hamburger menu clicked , navbar comes inside and set an overlayer and set for body overlayer hidden , for stoping scroll
 menuBtn.addEventListener("click", () => {
+  sideNavbar.classList.add("show-burger");
+  overLayerElement.classList.add("overlayer");
+  document.querySelector(".header").appendChild(overLayerElement);
+  document.querySelector("body").classList.add("overflow-hidden");
+
+  overLayerElement.addEventListener("click", () => {
+    document.querySelector("body").classList.remove("overflow-hidden");
+    sideNavbar.classList.remove("show-burger");
+    overLayerElement.remove();
+  });
+});
+// menu two scripts
+menuBtnTwo.addEventListener("click", () => {
   sideNavbar.classList.add("show-burger");
   overLayerElement.classList.add("overlayer");
   document.querySelector(".header").appendChild(overLayerElement);
