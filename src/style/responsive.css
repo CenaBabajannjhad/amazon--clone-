@@ -4,6 +4,9 @@
     margin-right: 3%;
     margin-bottom: 40px;
   }
+  .main-boxis {
+    top: 60%;
+  }
 }
 @media (max-width: 1281px) {
   .main-box {
@@ -14,16 +17,25 @@
   .burger {
     width: 33%;
   }
+  .main-boxis {
+    top: 50%;
+  }
 }
 @media (max-width: 1025px) {
   .menu-section-title {
     font-size: 17px;
     padding: 20px 20px;
   }
+  .main-boxis {
+    top: 40%;
+  }
 }
 @media (max-width: 801px) {
   .burger {
     width: 59%;
+  }
+  .main-boxis {
+    top: 35%;
   }
 }
 @media (max-width: 600px) {

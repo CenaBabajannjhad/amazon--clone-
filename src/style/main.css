@@ -544,3 +544,7 @@ select.header-selector {
 .shop-link {
   color: rgb(37, 37, 250);
 }
+.main-boxis {
+  position: absolute;
+  top: 70%;
+}
