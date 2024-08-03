@@ -242,8 +242,25 @@ const Data = [
     title: "product-60",
     imageSrc: "./assets/image/boxes-img/4.jpg",
   },
+  {
+    title: "product-61",
+    imageSrc: "./assets/image/boxes-img/4.jpg",
+  },
+  {
+    title: "product-62",
+    imageSrc: "./assets/image/boxes-img/4.jpg",
+  },
+  {
+    title: "product-63",
+    imageSrc: "./assets/image/boxes-img/4.jpg",
+  },
+  {
+    title: "product-64",
+    imageSrc: "./assets/image/boxes-img/4.jpg",
+  },
 ];
 const boxesRoot = document.querySelector("#box-container");
+const lenData = Data.length;
 let scrollBoxesCount = 8;
 let scrollStep = 0;
 // **carousel area**
@@ -251,6 +268,7 @@ const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 const slider = document.querySelector(".slider");
 const images = document.querySelectorAll(".slid-images");
+// bug , i get images width and for transfor carousel images use this , when page size changes this dosen't update and responsive *
 const imagesWidth = images[0].clientWidth;
 const lastImageLength = images.length - 1;
 let index = 0;
@@ -265,6 +283,7 @@ const signInDrop = document.getElementById("sign-in");
 const dropElements = [languageDrop, signInDrop];
 
 // **carousel area**
+// i setinterval for carousel , each 4 secound slide the slider
 setInterval(() => {
   index++;
   slider.style.transform = `translate(${-index * imagesWidth}px)`;
@@ -273,6 +292,7 @@ setInterval(() => {
     index = 0;
   }
 }, 4000);
+// prev button clicked , translate forward
 nextBtn.addEventListener("click", () => {
   index++;
   slider.style.transform = `translate(${-index * imagesWidth}px)`;
@@ -282,6 +302,7 @@ nextBtn.addEventListener("click", () => {
     index = 0;
   }
 });
+// prev button clicked , translate back
 prevBtn.addEventListener("click", () => {
   if (index !== 0) {
     index--;
@@ -294,6 +315,7 @@ prevBtn.addEventListener("click", () => {
   }
 });
 // **side-navbar area**
+// when hamburger menu clicked , navbar comes inside and set an overlayer and set for body overlayer hidden , for stoping scroll
 menuBtn.addEventListener("click", () => {
   sideNavbar.classList.add("show-burger");
   overLayerElement.classList.add("overlayer");
@@ -307,6 +329,8 @@ menuBtn.addEventListener("click", () => {
   });
 });
 // **drop-down area**
+// when mouseover the navbar links , this event add and overlayer
+// i got two navbar link , and i set they into an array and set a loop on they
 dropElements.forEach((element) => {
   element.addEventListener("mouseover", () => {
     overLayerElement.classList.add("overlayer");
@@ -318,8 +342,8 @@ dropElements.forEach((element) => {
 });
 
 // **boxes area**
-// box generator , it's get a number for infinite scroll
-const boxGeneration = (count = 8, step = 0) => {
+// box generator , this func get two param , one => until where in data array make box , two => as where startin generate box 
+const boxGenerator = (count = 8, step = 0) => {
   for (let i = step; i < count; i++) {
     // create a container for boxes
     const boxContainer = document.createElement("div");
@@ -343,8 +367,8 @@ const boxGeneration = (count = 8, step = 0) => {
     boxContainer.append(boxLink);
   }
 };
-boxGeneration();
-// box loading
+boxGenerator();
+// box loading element
 const boxLoading = () => {
   let boxContainer = document.querySelector("#box-container");
   // create container for loading
@@ -357,38 +381,49 @@ const boxLoading = () => {
   loadingContainer.appendChild(loadingElement);
   boxContainer.append(loadingContainer);
 };
+// when call this func , it's remove loading from document
 const boxLoadingRemover = () => {
-  document.querySelector(".loading-container").remove();
+  if(document.querySelector(".loading-container")){
+    document.querySelector(".loading-container").remove();
+  }
 };
 // when client scroll touch the end , scrollBoxesCount + 8 for showing more box
 window.addEventListener("scroll", () => {
+  // track scroll place
   if (
     window.scrollY + window.innerHeight >=
     document.documentElement.scrollHeight - 1
   ) {
-    // if loading dosen't exitst in document create and append it into document
+    // if loading dosen't exitst in document create and append it into document , this condition prevents calling loading function several times
     if (document.querySelector(".loading-container") === null) {
-      boxLoading();
+      // when call loading function , we dosen't reach the end of data array
+      if(scrollBoxesCount <= lenData){
+        boxLoading();
+      }
     }
-    // update scroll count
+    // update scrollStap and count
     scrollStepUpdate();
     scrollBoxesCountUpdate();
     // settimeout for removing loading form document and update box generator for more boxes in document
     setTimeout(() => {
+      // when call boxGenerator we dosen't reach the end of data array
+      if(scrollBoxesCount <= lenData){
+        boxGenerator(scrollBoxesCount, scrollStep);
+      }
+      // and after remove loading from page
       boxLoadingRemover();
-      boxGeneration(scrollBoxesCount, scrollStep);
-    }, 1000);
+    }, 2000);
   }
 });
 // update scrollStep variable for box generator loop
 let scrollStepUpdate = () => {
   let step = 8;
   scrollStep += step;
-  console.log(scrollStep);
+  console.log(scrollStep)
 };
 // update scrollBoxesCount variable for box generator loop
 let scrollBoxesCountUpdate = () => {
   let count = 8;
   scrollBoxesCount += count;
-  console.log(scrollBoxesCount);
+  console.log(scrollBoxesCount)
 };
