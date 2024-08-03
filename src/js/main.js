@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // **boxes data**
 const Data = [
@@ -303,7 +303,7 @@ menuBtn.addEventListener("click", () => {
   overLayerElement.addEventListener("click", () => {
     document.querySelector("body").classList.remove("overflow-hidden");
     sideNavbar.classList.remove("show-burger");
-    overLayerElement.remove()
+    overLayerElement.remove();
   });
 });
 // **drop-down area**
@@ -316,3 +316,79 @@ dropElements.forEach((element) => {
     document.querySelector(".overlayer").remove();
   });
 });
+
+// **boxes area**
+// box generator , it's get a number for infinite scroll
+const boxGeneration = (count = 8, step = 0) => {
+  for (let i = step; i < count; i++) {
+    // create a container for boxes
+    const boxContainer = document.createElement("div");
+    boxContainer.classList.add("main-box");
+    // create title tag and set title from data
+    const boxTitle = document.createElement("h2");
+    boxTitle.classList.add("box-title");
+    boxTitle.textContent = Data[i].title;
+    // create image and set src from data
+    const boxImg = document.createElement("img");
+    boxImg.classList.add("shop-img");
+    boxImg.src = Data[i].imageSrc;
+    // create link tag with static text content
+    const boxLink = document.createElement("a");
+    boxLink.classList.add("shop-link");
+    boxLink.textContent = "shop now";
+    // append they into boxesRoot
+    boxesRoot.append(boxContainer);
+    boxContainer.append(boxTitle);
+    boxContainer.append(boxImg);
+    boxContainer.append(boxLink);
+  }
+};
+boxGeneration();
+// box loading
+const boxLoading = () => {
+  let boxContainer = document.querySelector("#box-container");
+  // create container for loading
+  let loadingContainer = document.createElement("div");
+  loadingContainer.classList.add("loading-container");
+  // add loading svg
+  let loadingElement = document.createElement("img");
+  loadingElement.src = "./assets/svg/loading/Spin@1x-1.0s-200px-200px.svg";
+  // append they
+  loadingContainer.appendChild(loadingElement);
+  boxContainer.append(loadingContainer);
+};
+const boxLoadingRemover = () => {
+  document.querySelector(".loading-container").remove();
+};
+// when client scroll touch the end , scrollBoxesCount + 8 for showing more box
+window.addEventListener("scroll", () => {
+  if (
+    window.scrollY + window.innerHeight >=
+    document.documentElement.scrollHeight - 1
+  ) {
+    // if loading dosen't exitst in document create and append it into document
+    if (document.querySelector(".loading-container") === null) {
+      boxLoading();
+    }
+    // update scroll count
+    scrollStepUpdate();
+    scrollBoxesCountUpdate();
+    // settimeout for removing loading form document and update box generator for more boxes in document
+    setTimeout(() => {
+      boxLoadingRemover();
+      boxGeneration(scrollBoxesCount, scrollStep);
+    }, 1000);
+  }
+});
+// update scrollStep variable for box generator loop
+let scrollStepUpdate = () => {
+  let step = 8;
+  scrollStep += step;
+  console.log(scrollStep);
+};
+// update scrollBoxesCount variable for box generator loop
+let scrollBoxesCountUpdate = () => {
+  let count = 8;
+  scrollBoxesCount += count;
+  console.log(scrollBoxesCount);
+};
