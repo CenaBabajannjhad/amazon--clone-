@@ -83,10 +83,10 @@ body {
   margin: 5px 8px;
 }
 .br-box {
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 .br-box:hover {
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .header-logo a img {
@@ -124,6 +124,9 @@ body {
   border: none;
 
   background-color: #e6e6e6;
+}
+select.header-selector {
+  max-width: 50px;
 }
 .search input {
   border: none;
@@ -364,6 +367,7 @@ body {
   max-height: 40px;
   display: flex;
   justify-content: flex-start;
+  justify-items: center;
   background-color: #0f110f;
 }
 .buttom-header div:first-child {
@@ -381,6 +385,7 @@ body {
 .buttom-item {
   margin: 5px 0px 6px;
   padding: 8px 9px;
+  align-self: center;
 }
 .buttom-item > a {
   color: #fff;
