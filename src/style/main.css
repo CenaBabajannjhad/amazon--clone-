@@ -102,8 +102,28 @@ body {
   .buttom-item {
     display: none !important;
   }
-}
+  .header-selector {
+    display: none !important ;
+  }
+  .header-logo {
+    width: 56px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-content: center !important;
+  }
 
+  .header-logo a img {
+    width: 56px !important;
+    height: 26px !important;
+    margin-top: 7px !important;
+  }
+  .mobile-all {
+    display: block !important;
+  }
+}
+.mobile-all {
+  display: none;
+}
 .header {
   background-color: #131921;
   position: absolute;

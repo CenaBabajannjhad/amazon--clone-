@@ -37,6 +37,10 @@
   .main-boxis {
     top: 35%;
   }
+  #next,
+  #prev {
+    width: 40px;
+  }
 }
 @media (max-width: 600px) {
 }
